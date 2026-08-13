@@ -53,13 +53,7 @@
 
     <div data-reveal="" style="opacity:0;transform:translateY(24px);transition:opacity .7s ease .1s,transform .7s ease .1s;">
       <div style="position:relative;border:1px solid #2A2A2A;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6);aspect-ratio:9/16;max-width:380px;margin:0 auto;">
-        <video id="vsl-video" src="./video1.mp4" autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;cursor:pointer;" onclick="if(this.muted){this.muted=false;this.volume=1;document.getElementById('unmute-overlay').style.display='none';}else{this.paused?this.play():this.pause();}"></video>
-        <div id="unmute-overlay" onclick="var v=document.getElementById('vsl-video');v.muted=false;v.volume=1;v.play();this.style.display='none';" style="position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-end;padding:20px;cursor:pointer;z-index:10;background:linear-gradient(0deg, rgba(0,0,0,0.3) 0%, transparent 30%);">
-          <button style="background:rgba(0,0,0,0.6);color:#fff;border:1px solid rgba(255,255,255,0.2);padding:10px 16px;border-radius:999px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:8px;pointer-events:none;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-            Toque para ouvir
-          </button>
-        </div>
+        <video id="vsl-video" src="./video1.mp4" autoplay muted loop playsinline controls style="width:100%;height:100%;object-fit:cover;"></video>
       </div>
       <div style="margin:22px 0 0;text-align:center;">
         <p style="font-size:clamp(15px,1.9vw,18px);font-weight:700;line-height:1.35;">Primeiro participe e configure.<br><span style="color:#A7A7A7;font-weight:600;">Depois decida se quer se tornar nosso parceiro.</span></p>
