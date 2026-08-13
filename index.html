@@ -482,8 +482,8 @@ class Component extends DCLogic {
       { n: '06', title: 'Envio', desc: 'Despacho para a transportadora.', accent: gA, accentBg: gBg, accentBorder: gBd, mk: false, sale: false },
       { n: '07', title: 'Cliente final', desc: 'O pedido segue direto ao consumidor.', accent: gA, accentBg: gBg, accentBorder: gBd, mk: false, sale: false },
     ];
-    const catTags = ['casa', 'utilidades', 'acessórios', 'eletrônicos', 'ferramentas', 'cozinha', 'organização', 'uso diário'];
-    const catNames = ['Utilidades domésticas', 'Organização', 'Acessórios', 'Casa & cozinha', 'Ferramentas', 'Itens do dia a dia', 'Acessórios diversos', 'Uso cotidiano'];
+    const catTags = ['casa', 'utilidades', 'acessórios', 'eletrônicos', 'ferramentas', 'cozinha'];
+    const catNames = ['Utilidades domésticas', 'Organização', 'Acessórios', 'Casa & cozinha', 'Ferramentas', 'Itens do dia a dia'];
     const catalog = catTags.map((tag, i) => ({ tag: 'produto — ' + tag, name: catNames[i] }));
     const priceFlow = [
       { t: 'Catálogo' }, { t: 'Escolha do produto' }, { t: 'Análise do marketplace' }, { t: 'Você define o preço' }, { t: 'Você define sua margem' },
